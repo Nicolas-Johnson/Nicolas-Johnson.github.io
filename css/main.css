@@ -18,6 +18,11 @@ body {
   overflow-x: hidden;
 }
 
+.container {
+  width: 100%;
+  padding: 0 60px;
+}
+
 .hideformobile {
   opacity: 0;
 }
@@ -44,13 +49,13 @@ h3 {
   margin: 20px auto;
 }
 
-h4 {
+.artcles-h3 {
   font-weight: 700;
   font-size: .85em;
   margin: 10px auto;
 }
 
-h5 {
+h4 {
   margin: 20px auto 10px;
   font-weight: 300;
   font-size: .6em;
@@ -154,6 +159,9 @@ header .header-nav-modal {
         -ms-flex-align: center;
             align-items: center;
   }
+  header .header-navigation .header-navigation-desktop a {
+    margin-right: 10px;
+  }
   header .header-navigation .header-navigation-mobile {
     display: none;
   }
@@ -212,10 +220,16 @@ header .header-nav-modal {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  padding: 50 0 0;
+}
+
+#hero .hero-call-to-action .hero-call-to-action_infos h1 {
+  padding: 0 20px;
 }
 
 #hero .hero-call-to-action .hero-call-to-action_infos p {
   margin: 20px auto;
+  padding: 0 20px;
 }
 
 #hero .hero-call-to-action .hero-call-to-action_infos button {
@@ -237,6 +251,13 @@ header .header-nav-modal {
 }
 
 @media screen and (min-width: 765px) {
+  #hero .hero-call-to-action {
+    width: 100%;
+    margin: 44px auto 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
   #hero .hero-call-to-action .hero-call-to-action_img {
     background-image: url(../images/bg-intro-desktop.svg);
     background-position: 400px bottom;
@@ -247,7 +268,10 @@ header .header-nav-modal {
     right: -270px;
   }
   #hero .hero-call-to-action .hero-call-to-action_infos {
-    padding-top: 50px;
+    padding: 50px 0 0 60px;
+  }
+  #hero .hero-call-to-action .hero-call-to-action_infos h1 {
+    padding: 0;
   }
 }
 
@@ -264,6 +288,7 @@ header .header-nav-modal {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
     width: 100%;
+    margin: 44px auto 0;
   }
   #hero .hero-call-to-action .hero-call-to-action_img {
     width: 50vw;
@@ -304,10 +329,6 @@ header .header-nav-modal {
   padding-bottom: 50px;
 }
 
-#why-features .why-features-why {
-  padding: 50px 20px 20px 20px;
-}
-
 #why-features .why-features-features .why-features-fetures_feature img {
   margin-top: 30px;
   width: 72px;
@@ -315,13 +336,9 @@ header .header-nav-modal {
 }
 
 @media screen and (min-width: 765px) {
-  #why-features {
-    padding: 50px 80px;
-  }
   #why-features .why-features-why {
     text-align: left;
-    padding: 0 0 0 80px;
-    margin: 50px 100px 20px 0;
+    margin: 50px 0 20px 10px;
     width: 100%;
   }
   #why-features .why-features-why p {
@@ -354,7 +371,6 @@ header .header-nav-modal {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  padding: 70px 0;
   background: #fafafa;
 }
 
@@ -369,9 +385,7 @@ header .header-nav-modal {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 90%;
   background: white;
-  margin: 10px auto;
   border-radius: .5em;
 }
 
@@ -436,10 +450,8 @@ header .header-nav-modal {
 @media screen and (min-width: 765px) {
   #articles {
     text-align: left;
-    padding: 70px 30px;
   }
   #articles h2 {
-    width: 90%;
     margin: 20px auto;
   }
   #articles .articles-articles {
@@ -450,8 +462,8 @@ header .header-nav-modal {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 90%;
-    margin: 20px auto;
+    width: 100%;
+    margin: 0 auto;
   }
   #articles .articles-articles .articles-articles-article {
     margin: 0 10px;
@@ -493,6 +505,7 @@ footer .footer-social {
 footer .footer-social a img {
   width: 25px;
   height: 25px;
+  margin: 0 5px;
 }
 
 footer .footer-nav {
@@ -554,11 +567,17 @@ footer .footer-cta p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    text-align: right;
   }
   footer .footer-logo-social {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
+    text-align: left;
+    padding-left: 5px;
+  }
+  footer .footer-logo-social .footer-social {
+    margin: 0 0 20px 0;
   }
   footer .footer-nav {
     display: -webkit-box;
@@ -588,7 +607,7 @@ footer .footer-cta p {
     margin-left: 0;
   }
   footer .footer-cta button {
-    margin-top: 20px;
+    margin: 20px 5px 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

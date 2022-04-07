@@ -52,6 +52,9 @@ header {
       .header-navigation-desktop {
         display: flex;
         align-items: center;
+        a {
+          margin-right: 10px;
+        }
       }
       .header-navigation-mobile {
         display: none;

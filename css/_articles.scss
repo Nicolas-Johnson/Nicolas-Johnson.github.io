@@ -2,15 +2,15 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 70px 0;
+  //padding: 70px 0;
   background: $very-light-gray;
   .articles-articles-article {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%;
+    //width: 90%;
     background: $white;
-    margin: 10px auto;
+    //margin: 10px auto;
     border-radius: .5em;
     .image_currency {
       background-image: url(../images/image-currency.jpg);
@@ -47,15 +47,15 @@
   #articles {
     text-align: left;
     h2 {
-      width: 90%;
+      //width: 90%;
       margin: 20px auto;
     }
-    padding: 70px 30px;
+    //padding: 70px 30px;
     .articles-articles {
       display: flex;
       flex-direction: row;
-      width: 90%;
-      margin: 20px auto;
+      width: 100%;
+      margin: 0 auto;
       .articles-articles-article {
         margin: 0 10px;
       }

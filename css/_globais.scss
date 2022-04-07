@@ -16,6 +16,11 @@ body {
   overflow-x: hidden;
 }
 
+.container {
+  width: 100%;
+  padding: 0 60px;
+}
+
 .hideformobile {
   opacity: 0;
 }
@@ -42,13 +47,13 @@ h3 {
   margin: 20px auto;
 }
 
-h4 {
+.artcles-h3 {
   font-weight: 700;
   font-size: .85em;
   margin: 10px auto;
 }
 
-h5 {
+h4 {
   margin: 20px auto 10px;
   font-weight: 300;
   font-size: .6em;

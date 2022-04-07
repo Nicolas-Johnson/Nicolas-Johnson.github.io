@@ -6,9 +6,6 @@
   background: $light-grayish-blue;
   padding-bottom: 50px;
 
-  .why-features-why {
-    padding: 50px 20px 20px 20px;
-  }
   .why-features-features {
     .why-features-fetures_feature {
       img {
@@ -22,11 +19,10 @@
 
 @media screen and (min-width: 765px) {
   #why-features {
-    padding: 50px 80px;
+    //padding: 50px 80px;
     .why-features-why {
       text-align: left;
-      padding: 0 0 0 80px;
-      margin: 50px 100px 20px 0;
+      margin: 50px 0 20px 10px;
       width: 100%;
       p {
         padding: 0 50% 0 0;
