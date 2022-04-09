@@ -15,12 +15,7 @@
     flex-direction: column;
     .snap_articles-article {
       button {
-        margin-top: 10px;
-        color: $lime-green;
-        background: $white;
-        border: $lime-green solid 1px;
-        padding: 10px 20px;
-        border-radius: 1.5em;
+        @include btn_2
       }
     }
   }

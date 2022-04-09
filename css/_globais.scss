@@ -101,3 +101,17 @@ p {
     opacity: 0.4;
   }
 }
+
+@mixin btn_2 {
+  margin-top: 10px;
+  color: $lime-green;
+  background: $white;
+  border: $lime-green solid 1px;
+  padding: 10px 20px;
+  border-radius: 1.5em;
+
+  &:hover {
+    background-image: linear-gradient(to left, $bright-cyan, $lime-green);
+    color: $white;
+  }
+}

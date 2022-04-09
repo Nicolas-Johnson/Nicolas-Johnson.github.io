@@ -1,0 +1,43 @@
+#cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: $light-grayish-blue;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .cta_form {
+    form {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      background: $white;
+      border: 1px solid $lime-green;
+      border-radius: .5em;
+
+      input {
+        padding: 10px 20px;
+        border: 1px solid $bright-cyan;
+        margin-bottom: 10px;
+        border-radius: .4em;
+      }
+
+      button {
+        @include btn;
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 765px) {
+  #cta {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    .cta_header {
+      flex: .8;
+    }
+  }
+}

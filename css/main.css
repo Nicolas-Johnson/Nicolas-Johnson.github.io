@@ -401,6 +401,12 @@ header .header-nav-modal {
   border-radius: 1.5em;
 }
 
+#snap .snap_articles .snap_articles-article button:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(#2bb7da), to(#31d35c));
+  background-image: linear-gradient(to left, #2bb7da, #31d35c);
+  color: white;
+}
+
 @media screen and (min-width: 765px) {
   #snap .snap_articles {
     display: -ms-grid;
@@ -408,6 +414,83 @@ header .header-nav-modal {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+  }
+}
+
+#cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: #f3f4f6;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#cta .cta_form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  background: white;
+  border: 1px solid #31d35c;
+  border-radius: .5em;
+}
+
+#cta .cta_form form input {
+  padding: 10px 20px;
+  border: 1px solid #2bb7da;
+  margin-bottom: 10px;
+  border-radius: .4em;
+}
+
+#cta .cta_form form button {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 25px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#2bb7da), to(#31d35c));
+  background-image: linear-gradient(to left, #2bb7da, #31d35c);
+  border: none;
+  outline: none;
+  padding: 0.7778rem 1.3889rem;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#cta .cta_form form button:hover {
+  opacity: 0.4;
+}
+
+@media screen and (min-width: 765px) {
+  #cta {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #cta .cta_header {
+    -webkit-box-flex: .8;
+        -ms-flex: .8;
+            flex: .8;
   }
 }
 
