@@ -1,0 +1,37 @@
+#snap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 20px;
+  background: $very-light-gray;
+  .snap_header {
+    h2 {
+      margin-top: 20px;
+    }
+  }
+  .snap_articles {
+    display: flex;
+    flex-direction: column;
+    .snap_articles-article {
+      button {
+        margin-top: 10px;
+        color: $lime-green;
+        background: $white;
+        border: $lime-green solid 1px;
+        padding: 10px 20px;
+        border-radius: 1.5em;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 765px) {
+  #snap {
+    .snap_articles {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+  }
+}
